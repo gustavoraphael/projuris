@@ -1,0 +1,36 @@
+version: '3'
+
+networks:
+  projuris:
+    driver: bridge
+
+services:
+  projuris-database-server:
+    build:
+      context: ${STORAGE}/postgres
+      dockerfile: Dockerfile
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - TZ=GMT
+    volumes:
+      - ${STORAGE}/volume/postgres:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - projuris
+  projuris-order-service:
+    build:
+      context: ${APPLICATIONS}/dev
+      dockerfile: Dockerfile
+    networks:
+      - projuris
+    ports:
+      - 8100:8100
+    expose:
+      - 8100
+    depends_on:
+      - projuris-database-server
+    # environment:
+    #   - JAVA_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=8100,suspend=y # REMOTE DEBUG
+ 
