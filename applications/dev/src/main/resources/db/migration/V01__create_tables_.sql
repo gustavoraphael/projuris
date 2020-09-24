@@ -2,6 +2,7 @@ CREATE TABLE orderService
 (
 	id UUID PRIMARY KEY NOT NULL,
 	client_id UUID NOT NULL,
+	number NUMERIC NOT NULL,
 	product VARCHAR(100) NOT NULL,
 	problem VARCHAR NOT NULL,
 	dateInit TIMESTAMP,
@@ -17,7 +18,7 @@ CREATE TABLE client
 	fone VARCHAR(40)
 );
 
-CREATE TABLE  orderServiceAux
+CREATE TABLE orderServiceAux
 (
 	id UUID PRIMARY KEY NOT NULL,
 	order_id UUID NOT NULL,

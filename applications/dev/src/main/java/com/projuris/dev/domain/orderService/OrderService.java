@@ -19,6 +19,9 @@ public class OrderService {
 	@Column(name="client_id")
 	private UUID clientId;
 	
+	@Column(name="number")
+	private Integer number;
+	
 	@Column(name="product")
 	private String product;
 	
