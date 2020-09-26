@@ -11,6 +11,6 @@ import com.projuris.dev.domain.orderService.OrderService;
 @Repository
 public interface OrderServiceRepository extends JpaRepository<OrderService, UUID>{
 
-	@Query(value = "select DISTINCT(os.number) from orderservice os order by os.number", nativeQuery = true)
+	@Query(value = "select os.number from orderservice os order by os.number desc limit 1", nativeQuery = true)
 	public Integer findLastNumber();
 }

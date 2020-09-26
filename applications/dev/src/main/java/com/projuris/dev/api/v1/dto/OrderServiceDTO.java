@@ -56,5 +56,4 @@ public class OrderServiceDTO {
 	
 	private Date dateFim;
 	
-	private Integer number;
 }

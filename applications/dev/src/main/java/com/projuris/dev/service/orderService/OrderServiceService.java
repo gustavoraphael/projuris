@@ -38,8 +38,7 @@ public class OrderServiceService {
 	
 	private OrderService convertToOrderService(OrderServiceDTO dto, UUID clientId) {
 		OrderService order = new OrderService();
-		
-		order.setId(UUID.randomUUID());
+		order.setNumber(getNumberOrder());
 		order.setProblem(dto.getProblem());
 		order.setClientId(clientId);
 		order.setProduct(dto.getProduct());
@@ -48,6 +47,12 @@ public class OrderServiceService {
 		return order;
 	}
 	
+	private Integer getNumberOrder() {
+		Integer number = orderServiceRepository.findLastNumber();		
+		return number != null ? number+1 : 1;
+	}
+
+
 	private Client convertToClient(OrderServiceDTO dto) {
 		Client client = new Client();
 		client.setId(UUID.randomUUID());
