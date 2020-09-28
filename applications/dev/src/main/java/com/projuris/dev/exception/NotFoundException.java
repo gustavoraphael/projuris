@@ -1,5 +1,11 @@
 package com.projuris.dev.exception;
 
+/**
+ * Excessão customizada para NotFound.
+ *
+ * @author Gustavo Raphael Laurindo Pereira
+ */
+
 public class NotFoundException extends BaseException {
 
 	private static final String title = "Not Found";

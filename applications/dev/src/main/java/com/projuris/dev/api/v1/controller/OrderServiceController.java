@@ -23,7 +23,7 @@ public class OrderServiceController {
 	private OrderServiceService service;
 
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<OrderService> listOrders(@PathVariable("id") String id) {
+	public ResponseEntity<OrderService> listOrder(@PathVariable("id") String id) {
 		return ResponseEntity.ok(service.findById(UUID.fromString(id)));
 	}
 	
