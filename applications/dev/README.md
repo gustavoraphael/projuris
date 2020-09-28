@@ -22,7 +22,7 @@ O serviço possui testes que garantem o funcionamento das regras de negócio sol
 ### Flyway
 O projeto possui dois scripts que são executados de forma sequencial:
 
-* **V1__init.sql:** responsável pela criação da estrutura de tabelas do serviço.
+* **V01__create_tables_.sql:** responsável pela criação da estrutura de tabelas do serviço.
 * **V2__initSetup.sql:** responsável por um "boot" inicial de dados do serviço
 
 ### Debug Remoto
