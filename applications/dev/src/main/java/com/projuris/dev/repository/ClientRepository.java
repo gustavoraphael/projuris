@@ -7,6 +7,12 @@ import org.springframework.stereotype.Repository;
 
 import com.projuris.dev.domain.cliente.Client;
 
+/**
+ * Repositório da entidade Client.
+ *
+ * @author Gustavo Raphael Laurindo Pereira
+ */
+
 @Repository
 public interface ClientRepository extends JpaRepository<Client, UUID>{
 

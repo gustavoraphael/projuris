@@ -6,6 +6,12 @@ import java.util.UUID;
 import com.projuris.dev.domain.cliente.Client;
 import com.sun.istack.NotNull;
 
+/**
+ * DTO para salvar a ordem de serviço.
+ *
+ * @author Gustavo Raphael Laurindo Pereira
+ */
+
 public class OrderServiceDTO {	
 	
 	private UUID idOrder;

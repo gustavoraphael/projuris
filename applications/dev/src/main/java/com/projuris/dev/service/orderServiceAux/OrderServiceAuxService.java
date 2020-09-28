@@ -13,6 +13,12 @@ import com.projuris.dev.domain.orderServiceAux.OrderServiceAux;
 import com.projuris.dev.repository.ClientRepository;
 import com.projuris.dev.repository.OrderServiceAuxRepository;
 
+/**
+ * Serviço para ordem de serviço auxiliar.
+ *
+ * @author Gustavo Raphael Laurindo Pereira
+ */
+
 @Service
 public class OrderServiceAuxService {
 	

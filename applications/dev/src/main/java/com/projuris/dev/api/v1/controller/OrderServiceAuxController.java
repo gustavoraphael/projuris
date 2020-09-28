@@ -15,6 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.projuris.dev.domain.orderServiceAux.OrderServiceAux;
 import com.projuris.dev.service.orderServiceAux.OrderServiceAuxService;
 
+/**
+ * Controller da Ordem de Serviço Auxiliar.
+ *
+ * @author Gustavo Raphael Laurindo Pereira
+ */
+
 @RestController
 @RequestMapping("/orderServiceAux")
 public class OrderServiceAuxController {

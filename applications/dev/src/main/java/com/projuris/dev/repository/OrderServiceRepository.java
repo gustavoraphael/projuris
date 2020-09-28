@@ -8,6 +8,12 @@ import org.springframework.stereotype.Repository;
 
 import com.projuris.dev.domain.orderService.OrderService;
 
+/**
+ * Repositório da entidade OrderService.
+ *
+ * @author Gustavo Raphael Laurindo Pereira
+ */
+
 @Repository
 public interface OrderServiceRepository extends JpaRepository<OrderService, UUID>{
 

@@ -8,6 +8,12 @@ import org.springframework.stereotype.Repository;
 
 import com.projuris.dev.domain.orderServiceAux.OrderServiceAux;
 
+/**
+ * Repositório da entidade OrderServiceAux.
+ *
+ * @author Gustavo Raphael Laurindo Pereira
+ */
+
 @Repository
 public interface OrderServiceAuxRepository extends JpaRepository<OrderServiceAux, UUID>{
 

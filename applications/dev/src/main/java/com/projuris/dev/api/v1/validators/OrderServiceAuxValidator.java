@@ -9,7 +9,11 @@ import org.springframework.stereotype.Component;
 import com.projuris.dev.domain.orderServiceAux.OrderServiceAux;
 import com.projuris.dev.exception.BadRequestException;
 import com.projuris.dev.repository.OrderServiceRepository;
-
+/**
+ * Validator da Ordem de Serviço Auxiliar.
+ *
+ * @author Gustavo Raphael Laurindo Pereira
+ */
 @Component
 public class OrderServiceAuxValidator {
 

@@ -15,6 +15,11 @@ import com.projuris.dev.api.v1.dto.OrderServiceDTO;
 import com.projuris.dev.domain.orderService.OrderService;
 import com.projuris.dev.service.orderService.OrderServiceService;
 
+/**
+ * Controller da Ordem de Serviço.
+ *
+ * @author Gustavo Raphael Laurindo Pereira
+ */
 @RestController
 @RequestMapping("/orderService")
 public class OrderServiceController {

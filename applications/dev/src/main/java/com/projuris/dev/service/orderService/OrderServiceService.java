@@ -17,6 +17,12 @@ import com.projuris.dev.exception.NotFoundException;
 import com.projuris.dev.repository.ClientRepository;
 import com.projuris.dev.repository.OrderServiceRepository;
 
+/**
+ * Serviço para ordem de serviço.
+ *
+ * @author Gustavo Raphael Laurindo Pereira
+ */
+
 @Service
 public class OrderServiceService {
 	

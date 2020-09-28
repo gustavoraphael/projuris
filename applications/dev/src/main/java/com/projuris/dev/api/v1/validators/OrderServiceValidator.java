@@ -10,6 +10,12 @@ import com.projuris.dev.domain.cliente.Client;
 import com.projuris.dev.exception.BadRequestException;
 import com.projuris.dev.repository.OrderServiceRepository;
 
+/**
+ * Validator da Ordem de Serviço.
+ *
+ * @author Gustavo Raphael Laurindo Pereira
+ */
+
 @Component
 public class OrderServiceValidator {
 	
